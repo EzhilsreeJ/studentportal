@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Portal Management</h1>
+    <div class="container">
+        <div class="form-section">
+            <h2>Add/Edit Student</h2>
+            <form id="studentForm">
+                <label for="studentId">Student ID:</label>
+                <input type="text" id="studentId" placeholder="e.g., S001" required>
+
+                <label for="studentName">Name:</label>
+                <input type="text" id="studentName" placeholder="e.g., Alice Smith" required>
+
+                <label for="studentMajor">Major:</label>
+                <input type="text" id="studentMajor" placeholder="e.g., Computer Science" required>
+
+                <button type="submit" id="submitButton">Add Student</button>
+                <button type="button" id="cancelEditButton" style="display: none;">Cancel Edit</button>
+            </form>
+        </div>
+        <div class="table-section">
+            <h2>Student List</h2>
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Major</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Student data will be inserted here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
